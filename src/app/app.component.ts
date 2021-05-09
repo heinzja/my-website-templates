@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-website-templates';
+  isMenuOpen: boolean = false;
+
+  onMenu(event:boolean):void {
+    this.isMenuOpen = event;
+  }
 }

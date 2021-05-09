@@ -1,0 +1,11 @@
+@use "../../styles.scss" as global;
+
+
+#root {
+    margin: global.$global-margin;
+}
+
+mat-card {
+    max-width: 15em;
+    max-height: 10em;
+}
