@@ -1,0 +1,12 @@
+<app-header [title]="title" (onMenu_EE)="onMenu($event)"></app-header>
+
+<mat-sidenav-container class="example-container">
+    <mat-sidenav [mode]="'over'" [opened]="isMenuOpen">
+        <app-side-nav></app-side-nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+<app-footer [title]="title"></app-footer>

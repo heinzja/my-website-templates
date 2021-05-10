@@ -1,0 +1,65 @@
+<div id="root">
+    <header>
+        <h1>My Explorer Header</h1>
+    </header>
+
+    <main>
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Content Header 1
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        This is a summary of the content
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae fermentum elit. Suspendisse
+                    aliquam lorem mi, porta condimentum ante luctus at. Morbi eleifend nibh id tellus ultricies
+                    consectetur. Nam felis dolor, cursus eu sollicitudin sit amet, convallis id lacus. Proin vel cursus
+                    orci, at feugiat dolor. Nulla rhoncus metus libero, non tincidunt augue commodo non. Integer sit
+                    amet nunc ac nulla placerat facilisis. Phasellus sit amet mauris tempus, molestie quam vitae, porta
+                    odio. Nunc dignissim auctor arcu, quis varius felis scelerisque porta. Aliquam erat volutpat.</p>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Content Header 2
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>Ut varius tempus magna, fermentum aliquam arcu ultrices posuere. Quisque ac libero ante. Praesent
+                    sagittis nisl vitae volutpat tristique. Praesent tellus nulla, gravida quis nulla porta, tristique
+                    dictum risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec euismod, nisl eget
+                    sollicitudin rutrum, sem mi pellentesque mi, ut egestas tellus nibh eget nibh. In varius tincidunt
+                    scelerisque. Nam imperdiet pretium enim, imperdiet tincidunt odio ultrices a. Pellentesque gravida,
+                    lacus in efficitur gravida, dui eros elementum leo, sit amet commodo lorem nibh vel ex.</p>
+
+            </mat-expansion-panel>
+
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Content Header 3
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>Nam a eleifend orci. Phasellus commodo non risus non fermentum. Sed posuere hendrerit urna, nec
+                    fermentum orci semper a. Praesent sollicitudin, quam nec consequat molestie, lacus nibh pellentesque
+                    urna, eu facilisis tortor lorem quis orci. Etiam lobortis commodo lectus, a mollis eros placerat et.
+                    Nunc tempus cursus est, in facilisis odio gravida sit amet. Donec commodo, ligula vitae tristique
+                    varius, quam arcu auctor quam, at varius urna turpis sed odio. Nunc et velit est. Phasellus laoreet
+                    non felis eu tincidunt. Cras condimentum augue vitae ligula dictum, at scelerisque nibh tempus. Duis
+                    at ipsum vitae eros tempor lobortis. Aliquam pulvinar commodo pulvinar.</p>
+
+            </mat-expansion-panel>
+        </mat-accordion>
+
+    </main>
+
+</div>

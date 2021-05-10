@@ -1,0 +1,6 @@
+@use "../../styles.scss" as global;
+
+
+#root {
+    margin: global.$global-margin;
+}
