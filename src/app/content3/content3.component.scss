@@ -3,9 +3,20 @@
 
 #root {
     margin: global.$global-margin;
+    padding: global.$global-padding;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
 }
 
 mat-card {
-    max-width: 15em;
-    max-height: 10em;
+    max-width: 250px;
+    margin: 10px
+}
+
+mat-card-content {
+    overflow-y: auto;
+    max-height: 250px;
 }
