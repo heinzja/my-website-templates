@@ -1,17 +1,32 @@
 <mat-toolbar color="primary">
-    <button mat-icon-button (click)="onMenu($event)">
-        <mat-icon>menu</mat-icon>
-    </button>
-    <span>{{title}}</span>
-    <span class="example-spacer"></span>
+  <button mat-icon-button (click)="onMenu($event)">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>{{ title }}</span>
+  <span class="example-spacer"></span>
 
-    <button mat-icon-button routerLink="/content">
-        <mat-icon>store</mat-icon>
-    </button>
-    <button mat-icon-button aria-label="Example icon-button with share icon" routerLink="/content2">
-        <mat-icon>explore</mat-icon>
-    </button>
-    <button mat-icon-button aria-label="Example icon-button with heart icon" routerLink="/content3">
-        <mat-icon>favorite</mat-icon>
-    </button>
+  <button mat-icon-button routerLink="/content">
+    <mat-icon>store</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    aria-label="Example icon-button with share icon"
+    routerLink="/content2"
+  >
+    <mat-icon>explore</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    aria-label="Example icon-button with heart icon"
+    routerLink="/content3"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    aria-label="Example icon-button with an image of an article"
+    routerLink="/content4"
+  >
+    <mat-icon>article</mat-icon>
+  </button>
 </mat-toolbar>

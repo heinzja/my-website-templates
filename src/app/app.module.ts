@@ -11,6 +11,7 @@ import { ContentComponent } from './content/content.component';
 import { Content2Component } from './content2/content2.component';
 import { Content3Component } from './content3/content3.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { Content4Component } from './content4/content4.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     ContentComponent,
     Content2Component,
     Content3Component,
-    SideNavComponent
+    SideNavComponent,
+    Content4Component
   ],
   imports: [
     BrowserModule,

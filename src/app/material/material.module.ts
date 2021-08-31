@@ -1,37 +1,49 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCardModule } from '@angular/material/card';
-import {MatDividerModule} from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    MatToolbarModule,
+    FormsModule,
     MatButtonModule,
+    MatCardModule,
+    MatDialogModule,
+    MatDividerModule,
+    MatExpansionModule,
+    MatGridListModule,
     MatIconModule,
     MatSidenavModule,
-    MatExpansionModule,
-    MatGridListModule, 
-    MatCardModule,
-    MatDividerModule
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   exports: [
-    MatToolbarModule,
-    MatToolbarModule,
+    FormsModule,
     MatButtonModule,
+    MatCardModule,
+    MatDialogModule,
+    MatDividerModule,
+    MatExpansionModule,
+    MatGridListModule,
     MatIconModule,
     MatSidenavModule,
-    MatExpansionModule,
-    MatGridListModule, 
-    MatCardModule,
-    MatDividerModule
-  ]
+    MatToolbarModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
+  ],
 })
-export class MaterialModule { }
+export class MaterialModule {}
