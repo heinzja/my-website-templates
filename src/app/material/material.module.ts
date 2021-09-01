@@ -10,7 +10,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 @NgModule({
@@ -18,6 +18,7 @@ import { NgModule } from '@angular/core';
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     MatButtonModule,
     MatCardModule,
     MatDialogModule,
@@ -31,7 +32,9 @@ import { NgModule } from '@angular/core';
     MatInputModule,
   ],
   exports: [
+    CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     MatButtonModule,
     MatCardModule,
     MatDialogModule,

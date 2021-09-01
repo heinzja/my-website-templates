@@ -1,0 +1,14 @@
+@use "../../styles.scss" as global;
+
+#root {
+  margin: global.$global-margin;
+}
+
+.my-styles {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
