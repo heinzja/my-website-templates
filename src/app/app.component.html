@@ -1,20 +1,27 @@
 <!-- START: HEADER -->
-<app-header [title]="title" (onMenu_EE)="onMenu($event)"></app-header>
+<div id="root-header">
+  <app-header [title]="title" (onMenu_EE)="onMenu($event)"></app-header>
+</div>
 <!-- STOP: HEADER -->
 
-<mat-sidenav-container class="example-container">
-  <mat-sidenav [mode]="'over'" [opened]="isMenuOpen">
-    <app-side-nav></app-side-nav>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <!-- START: CONTENT -->
-    <div style="margin: auto;">
-      <router-outlet></router-outlet>
-    </div>
-    <!-- END: CONTENT -->
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<div id="root-content">
+  <mat-sidenav-container class="container">
+    <mat-sidenav [mode]="'over'" [opened]="isMenuOpen">
+      <app-side-nav></app-side-nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <!-- START: CONTENT -->
+      <div style="margin: auto;">
+        <router-outlet></router-outlet>
+      </div>
+      <!-- END: CONTENT -->
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
 
 <!-- START: FOOTER -->
-<app-footer [title]="title"></app-footer>
+<div id="root-footer">
+  <app-footer [title]="title"></app-footer>
+</div>
 <!-- END: FOOTER -->
