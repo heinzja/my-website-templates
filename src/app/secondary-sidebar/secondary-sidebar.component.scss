@@ -1,0 +1,23 @@
+#root {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 72px;
+}
+
+.button-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 0.85em;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.button-content:hover {
+  filter: brightness(90%);
+  background-color: white;
+}

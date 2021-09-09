@@ -12,6 +12,7 @@ import { Content2Component } from './content2/content2.component';
 import { Content3Component } from './content3/content3.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { Content4Component } from './content4/content4.component';
+import { SecondarySidebarComponent } from './secondary-sidebar/secondary-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { Content4Component } from './content4/content4.component';
     Content2Component,
     Content3Component,
     SideNavComponent,
-    Content4Component
+    Content4Component,
+    SecondarySidebarComponent
   ],
   imports: [
     BrowserModule,

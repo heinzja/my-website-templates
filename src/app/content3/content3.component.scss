@@ -1,22 +1,39 @@
 @use "../../styles.scss" as global;
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 #root {
-    margin: global.$global-margin;
-    padding: global.$global-padding;
+  margin: global.$global-margin;
+  padding: global.$global-padding;
 }
-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center
+
+.content-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.card-title-styles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
 }
 
 mat-card {
-    max-width: 250px;
-    margin: 10px
+  max-width: 250px;
+  margin: 10px;
 }
 
 mat-card-content {
-    overflow-y: auto;
-    max-height: 250px;
+  overflow-y: auto;
+  max-height: 250px;
 }
