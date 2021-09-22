@@ -1,11 +1,13 @@
+@use "../styles.scss" as global;
+
 #root-header {
-  height: 10%;
+  height: global.$global-header-height;
 }
 #root-content {
-  height: 80%;
+  height: calc(100vh - 64px - 40px); // 100vh - (header in px) - (footer in px)
 }
 #root-footer {
-  height: 10%;
+  height: global.$global-footer-height;
 }
 
 #content {

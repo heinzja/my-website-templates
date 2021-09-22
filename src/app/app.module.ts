@@ -13,6 +13,7 @@ import { Content3Component } from './content3/content3.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { Content4Component } from './content4/content4.component';
 import { SecondarySidebarComponent } from './secondary-sidebar/secondary-sidebar.component';
+import { SecondarySidebarLargeComponent } from './secondary-sidebar-large/secondary-sidebar-large.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SecondarySidebarComponent } from './secondary-sidebar/secondary-sidebar
     Content3Component,
     SideNavComponent,
     Content4Component,
-    SecondarySidebarComponent
+    SecondarySidebarComponent,
+    SecondarySidebarLargeComponent
   ],
   imports: [
     BrowserModule,
