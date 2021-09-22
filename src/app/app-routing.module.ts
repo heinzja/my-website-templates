@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'content2', component: Content2Component },
   { path: 'content3', component: Content3Component },
   { path: 'content4', component: Content4Component },
+  { path: '', redirectTo: 'content', pathMatch: 'full' },
   { path: '**', component: ContentComponent },
 ];
 

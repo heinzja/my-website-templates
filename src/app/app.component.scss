@@ -12,8 +12,5 @@
 
 #content {
   display: flex;
-}
-
-.container {
-  height: 100%;
+  flex-direction: row;
 }

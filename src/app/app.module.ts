@@ -26,7 +26,7 @@ import { SecondarySidebarLargeComponent } from './secondary-sidebar-large/second
     SideNavComponent,
     Content4Component,
     SecondarySidebarComponent,
-    SecondarySidebarLargeComponent
+    SecondarySidebarLargeComponent,
   ],
   imports: [
     BrowserModule,
