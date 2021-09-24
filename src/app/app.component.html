@@ -12,8 +12,8 @@
     <mat-sidenav-content>
       <!-- START: CONTENT -->
       <div id="content">
-        <app-secondary-sidebar *ngIf="showSmallScreenAssets && !showLargeScreenAssets"></app-secondary-sidebar>
-        <app-secondary-sidebar-large *ngIf="!showSmallScreenAssets && showLargeScreenAssets"></app-secondary-sidebar-large>
+        <app-secondary-sidebar *ngIf="showSmallScreenAssets"></app-secondary-sidebar>
+        <app-secondary-sidebar-large *ngIf="!showSmallScreenAssets"></app-secondary-sidebar-large>
         <router-outlet></router-outlet>
       </div>
       <!-- END: CONTENT -->

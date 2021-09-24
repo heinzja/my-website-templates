@@ -14,12 +14,13 @@ export class AppComponent implements AfterViewInit {
   screenWidth: number = 0;
   screenHeight: number = 0;
   showSmallScreenAssets = false;
-  showLargeScreenAssets = false;
 
-  constructor() {}
+  constructor() {
+    this.setScreenHeightWidthValues();
+  }
 
   ngAfterViewInit() {
-    this.setScreenHeightWidthValues();
+
   }
 
   @HostListener('window:resize', ['$event'])
@@ -36,10 +37,8 @@ export class AppComponent implements AfterViewInit {
     this.screenHeight = window.innerHeight;
     if (this.screenWidth <= 960) {
       this.showSmallScreenAssets = true;
-      this.showLargeScreenAssets = false;
     } else {
       this.showSmallScreenAssets = false;
-      this.showLargeScreenAssets = true;
     }
   }
 }
