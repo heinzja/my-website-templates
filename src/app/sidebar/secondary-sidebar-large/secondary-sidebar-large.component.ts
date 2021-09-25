@@ -27,6 +27,11 @@ export class SecondarySidebarLargeComponent implements OnInit {
       title: 'Content 4',
       link: '/content4',
     },
+    {
+      icon: 'dashboard',
+      title: 'Content 5',
+      link: '/content5',
+    },
   ];
 
   constructor() {}
