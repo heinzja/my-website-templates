@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContentComponent } from './content/content.component';
-import { Content2Component } from './content2/content2.component';
-import { Content3Component } from './content3/content3.component';
-import { Content4Component } from './content4/content4.component';
+import { ContentComponent } from './contents/content/content.component';
+import { Content2Component } from './contents/content2/content2.component';
+import { Content3Component } from './contents/content3/content3.component';
+import { Content4Component } from './contents/content4/content4.component';
 
 const routes: Routes = [
   { path: 'content', component: ContentComponent },
