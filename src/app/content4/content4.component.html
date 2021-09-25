@@ -1,9 +1,9 @@
 <div id="root">
-  <mat-card class="mat-elevation-z8" style="width: min-content; margin: auto">
+  <mat-card class="my-card-styles">
     <mat-card-title>Fourm Title</mat-card-title>
     <mat-card-content>
       <form [formGroup]="myFormGroup">
-        <div class="my-styles">
+        <div class="my-form-styles">
           <mat-form-field appearance="outline" class="my-styles">
             <mat-label>Name</mat-label>
             <input matInput [formControl]="nameFormControl" required />
@@ -20,6 +20,7 @@
               >Required</mat-error
             >
           </mat-form-field>
+          <br>
           <mat-form-field appearance="outline">
             <mat-label>Date</mat-label>
             <input
@@ -32,6 +33,7 @@
               >Required</mat-error
             >
           </mat-form-field>
+          <br>
           <mat-form-field appearance="outline">
             <mat-label>Email</mat-label>
             <input
@@ -47,6 +49,7 @@
               >Required</mat-error
             >
           </mat-form-field>
+          <br>
           <mat-form-field appearance="outline">
             <mat-label>Description</mat-label>
             <textarea

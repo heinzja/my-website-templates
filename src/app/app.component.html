@@ -12,9 +12,13 @@
     <mat-sidenav-content>
       <!-- START: CONTENT -->
       <div id="content">
-        <app-secondary-sidebar *ngIf="showSmallScreenAssets"></app-secondary-sidebar>
-        <app-secondary-sidebar-large *ngIf="!showSmallScreenAssets"></app-secondary-sidebar-large>
-        <router-outlet></router-outlet>
+        <div id="sidebar-container">
+          <app-secondary-sidebar *ngIf="showSmallScreenAssets"></app-secondary-sidebar>
+          <app-secondary-sidebar-large *ngIf="!showSmallScreenAssets"></app-secondary-sidebar-large>
+        </div>
+        <div id="content-container">
+          <router-outlet></router-outlet>
+        </div>
       </div>
       <!-- END: CONTENT -->
     </mat-sidenav-content>
