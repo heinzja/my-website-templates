@@ -28,5 +28,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 =======
 # my-website-templates
-a collection of website examples made with Angular Material
+The goal of this project was to practice various technologies within the Angular Framework. This project acts as a working template of ideas that can be used in other projects.
 >>>>>>> main

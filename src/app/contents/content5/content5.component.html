@@ -1,142 +1,16 @@
 <div id="root">
-  <div [ngClass]="cardCssStyles">
+  <div *ngFor="let data of fakeData" [ngClass]="cardCssStyles">
     <div id="image"></div>
     <div id="card-content">
       <mat-icon id="channel-icon">account_circle</mat-icon>
       <div id="card-content-text-container">
-        <div id="card-title">card-title</div>
-        <div id="card-channel-title">card-channel-title</div>
+        <div id="card-title">{{data.title}}</div>
+        <div id="card-channel-title">{{data.channel_title}}</div>
         <div id="card-content-text-container-subtext">
-          <div id="card-video-views"> 1,000,000</div>
+          <div id="card-video-views">{{data.views}}</div>
           <div style="padding-left: 0.5em; padding-right: 0.5em">*</div>
           <div id="card-video-upload-date">
-            {{ current_date | date: "MMM d, y" }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div [ngClass]="cardCssStyles">
-    <div id="image"></div>
-    <div id="card-content">
-      <mat-icon id="channel-icon">account_circle</mat-icon>
-      <div id="card-content-text-container">
-        <div id="card-title">card-title</div>
-        <div id="card-channel-title">card-channel-title</div>
-        <div id="card-content-text-container-subtext">
-          <div id="card-video-views"> 1,000,000</div>
-          <div style="padding-left: 0.5em; padding-right: 0.5em">*</div>
-          <div id="card-video-upload-date">
-            {{ current_date | date: "MMM d, y" }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div [ngClass]="cardCssStyles">
-    <div id="image"></div>
-    <div id="card-content">
-      <mat-icon id="channel-icon">account_circle</mat-icon>
-      <div id="card-content-text-container">
-        <div id="card-title">card-title</div>
-        <div id="card-channel-title">card-channel-title</div>
-        <div id="card-content-text-container-subtext">
-          <div id="card-video-views"> 1,000,000</div>
-          <div style="padding-left: 0.5em; padding-right: 0.5em">*</div>
-          <div id="card-video-upload-date">
-            {{ current_date | date: "MMM d, y" }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div [ngClass]="cardCssStyles">
-    <div id="image"></div>
-    <div id="card-content">
-      <mat-icon id="channel-icon">account_circle</mat-icon>
-      <div id="card-content-text-container">
-        <div id="card-title">card-title</div>
-        <div id="card-channel-title">card-channel-title</div>
-        <div id="card-content-text-container-subtext">
-          <div id="card-video-views"> 1,000,000</div>
-          <div style="padding-left: 0.5em; padding-right: 0.5em">*</div>
-          <div id="card-video-upload-date">
-            {{ current_date | date: "MMM d, y" }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div [ngClass]="cardCssStyles">
-    <div id="image"></div>
-    <div id="card-content">
-      <mat-icon id="channel-icon">account_circle</mat-icon>
-      <div id="card-content-text-container">
-        <div id="card-title">card-title</div>
-        <div id="card-channel-title">card-channel-title</div>
-        <div id="card-content-text-container-subtext">
-          <div id="card-video-views"> 1,000,000</div>
-          <div style="padding-left: 0.5em; padding-right: 0.5em">*</div>
-          <div id="card-video-upload-date">
-            {{ current_date | date: "MMM d, y" }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div [ngClass]="cardCssStyles">
-    <div id="image"></div>
-    <div id="card-content">
-      <mat-icon id="channel-icon">account_circle</mat-icon>
-      <div id="card-content-text-container">
-        <div id="card-title">card-title</div>
-        <div id="card-channel-title">card-channel-title</div>
-        <div id="card-content-text-container-subtext">
-          <div id="card-video-views"> 1,000,000</div>
-          <div style="padding-left: 0.5em; padding-right: 0.5em">*</div>
-          <div id="card-video-upload-date">
-            {{ current_date | date: "MMM d, y" }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div [ngClass]="cardCssStyles">
-    <div id="image"></div>
-    <div id="card-content">
-      <mat-icon id="channel-icon">account_circle</mat-icon>
-      <div id="card-content-text-container">
-        <div id="card-title">card-title</div>
-        <div id="card-channel-title">card-channel-title</div>
-        <div id="card-content-text-container-subtext">
-          <div id="card-video-views"> 1,000,000</div>
-          <div style="padding-left: 0.5em; padding-right: 0.5em">*</div>
-          <div id="card-video-upload-date">
-            {{ current_date | date: "MMM d, y" }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div [ngClass]="cardCssStyles">
-    <div id="image"></div>
-    <div id="card-content">
-      <mat-icon id="channel-icon">account_circle</mat-icon>
-      <div id="card-content-text-container">
-        <div id="card-title">card-title</div>
-        <div id="card-channel-title">card-channel-title</div>
-        <div id="card-content-text-container-subtext">
-          <div id="card-video-views"> 1,000,000</div>
-          <div style="padding-left: 0.5em; padding-right: 0.5em">*</div>
-          <div id="card-video-upload-date">
-            {{ current_date | date: "MMM d, y" }}
+            {{ data.upload_date | date: "MMM d, y" }}
           </div>
         </div>
       </div>
