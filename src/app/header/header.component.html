@@ -2,8 +2,10 @@
   <button mat-icon-button (click)="onMenu($event)">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>{{ title }}</span>
-  <span class="example-spacer"></span>
+
+  <span id="title" routerLink="/">{{ title }}</span>
+
+  <span class="spacer"></span>
 
   <button mat-icon-button routerLink="/content">
     <mat-icon>store</mat-icon>
