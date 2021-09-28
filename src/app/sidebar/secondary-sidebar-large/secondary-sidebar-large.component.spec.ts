@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { MaterialModule } from 'src/app/material/material.module';
 
 import { SecondarySidebarLargeComponent } from './secondary-sidebar-large.component';
 
@@ -8,7 +10,8 @@ describe('SecondarySidebarLargeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SecondarySidebarLargeComponent ]
+      declarations: [ SecondarySidebarLargeComponent ],
+      imports: [RouterTestingModule, MaterialModule]
     })
     .compileComponents();
   });
