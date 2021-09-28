@@ -15,6 +15,7 @@ import { Content4Component } from './contents/content4/content4.component';
 import { SecondarySidebarComponent } from './sidebar/secondary-sidebar/secondary-sidebar.component';
 import { SecondarySidebarLargeComponent } from './sidebar/secondary-sidebar-large/secondary-sidebar-large.component';
 import { Content5Component } from './contents/content5/content5.component';
+import { PageNotFoundComponent } from './contents/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { Content5Component } from './contents/content5/content5.component';
     SecondarySidebarComponent,
     SecondarySidebarLargeComponent,
     Content5Component,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
