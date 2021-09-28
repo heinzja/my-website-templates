@@ -1,0 +1,63 @@
+#root {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card-xs {
+  position: relative;
+  margin: 8px;
+  width: calc(100% / 1 - 16px - 0.01px);
+}
+
+.card-sm {
+  font-size: smaller;
+  position: relative;
+  margin: 8px;
+  width: calc(100% / 2 - 16px - 0.01px);
+}
+
+.card-md {
+  position: relative;
+  margin: 8px;
+  width: calc(100% / 3 - 16px - 0.01px);
+}
+
+.card-lg {
+  position: relative;
+  margin: 8px;
+  width: calc(100% / 4 - 16px - 0.01px);
+}
+
+#card-content {
+  display: flex;
+}
+
+#card-content-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#card-content-text-container-subtext {
+  display: flex;
+}
+
+#card-title {
+  line-height: 2.2rem;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+#image {
+  width: 100%;
+  height: 15em;
+  border: 1px solid black;
+}
+
+#channel-icon {
+  font-size: 36px;
+  width: 36px;
+  height: 36px;
+  padding: 5px;
+}
